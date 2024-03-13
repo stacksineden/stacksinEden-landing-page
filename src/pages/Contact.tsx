@@ -29,9 +29,9 @@ const Contact = () => {
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const openModal = () => {
-    setOpen(true);
-  };
+  // const openModal = () => {
+  //   setOpen(true);
+  // };
   const closeModal = () => {
     setOpen(false);
     Navigate("/usecases");
