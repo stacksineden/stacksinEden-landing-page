@@ -11,8 +11,10 @@ import imageF from "../assets/solutionimge.jpg";
 import imageG from "../assets/hero4.png";
 import Footer from "../components/Footer";
 import { shortenString } from "../uitils";
+import { useNavigate } from "react-router-dom";
 
 const Solutions = () => {
+  const Navigate = useNavigate();
   interface SolutionDataObj {
     title: string;
     description: string;
@@ -233,7 +235,9 @@ const Solutions = () => {
             className={`relative z-10 bg-white px-8 py-6 md:py-8 rounded-lg shadow-lg w-[90%] md:w-[800px] h-[80vh] overflow-y-scroll scrollbar-hide`}
           >
             <div className="flex flex-col gap-4 text-[#071E22]">
-              <h2 className="text-[20px] md:text-[24px] font-medium">{filteredData?.title}</h2>
+              <h2 className="text-[20px] md:text-[24px] font-medium">
+                {filteredData?.title}
+              </h2>
               <p className="text-[12px] md:text-[14px] font-light tracking-wide">
                 {filteredData?.description}
               </p>
@@ -289,7 +293,10 @@ const Solutions = () => {
               <span className="text-[#F4C095]">Stacked</span> in Eden's Realm.
             </h2>
           </div>
-          <button className="text-[12px] md:text-[14px] text-[#F4C095] cursor-pointer tracking-tight font-semibold bg-[#071E22] px-4 md:px-6 py-2 md:py-3 active:scale-90 rounded-full mx-auto border-[1px] border-[#e5e5e5] transition-all ease-in-out duration-300 shadow-lg">
+          <button
+            className="text-[12px] md:text-[14px] text-[#F4C095] cursor-pointer tracking-tight font-semibold bg-[#071E22] px-4 md:px-6 py-2 md:py-3 active:scale-90 rounded-full mx-auto border-[1px] border-[#e5e5e5] transition-all ease-in-out duration-300 shadow-lg"
+            onClick={() => Navigate("/contact")}
+          >
             Get started
           </button>
         </div>
@@ -391,7 +398,10 @@ const Solutions = () => {
               potential with stacksinEDEN's AI empowerment. Get started now!{" "}
             </p>
           </div>
-          <button className="text-[12px] md:text-[14px] text-[#F4C095] cursor-pointer tracking-tight font-semibold bg-[#071E22] px-4 md:px-6 py-2 md:py-3 active:scale-90 rounded-full mx-auto border-[1px] border-[#e5e5e5] transition-all ease-in-out duration-300 shadow-lg">
+          <button
+            className="text-[12px] md:text-[14px] text-[#F4C095] cursor-pointer tracking-tight font-semibold bg-[#071E22] px-4 md:px-6 py-2 md:py-3 active:scale-90 rounded-full mx-auto border-[1px] border-[#e5e5e5] transition-all ease-in-out duration-300 shadow-lg"
+            onClick={() => Navigate("/contact")}
+          >
             Get started
           </button>
         </div>

@@ -47,24 +47,22 @@ const Navbar = () => {
                 className="my-2 divide-y text-base divide-zinc-100 text-[#071E22]"
                 onClick={() => closeModal()}
               >
-                <Link to="#">
-                  {" "}
+                <Link to="/about">
                   <li className="block py-2">About Us</li>
                 </Link>
                 <Link to="/solutions">
-                  {" "}
                   <li className="block py-2">Our Solutions</li>
                 </Link>
                 <Link to="/usecases">
-                  {" "}
-                  <li className="block py-2">Use cases</li>
+                  <li className="block py-2">Products</li>
                 </Link>
-                <Link to="#">
-                  {" "}
+                <Link
+                  to="https://calendly.com/stacksineden/30min"
+                  target="_blank"
+                >
                   <li className="block py-2">Book a call</li>
                 </Link>
-                <Link to="#">
-                  {" "}
+                <Link to="https://medium.com/@stacksineden" target="_blank">
                   <li className="block py-2">Blog</li>
                 </Link>
               </ul>
@@ -95,7 +93,7 @@ const Navbar = () => {
             {/* menu 1 */}
             <div className="hidden items-center w-full gap-4 md:flex">
               <Link
-                to="#"
+                to="/about"
                 className="text-[13px] text-[#071E22] cursor-pointer tracking-tight font-medium hover:text-[#1D7874] transition-all ease-in-out duration-300"
               >
                 About Us
@@ -110,7 +108,7 @@ const Navbar = () => {
                 to="/usecases"
                 className="text-[13px] text-[#071E22] cursor-pointer tracking-tight font-medium hover:text-[#1D7874] transition-all ease-in-out duration-300"
               >
-                Use cases
+                Products
               </Link>
             </div>
           </div>
@@ -130,13 +128,15 @@ const Navbar = () => {
         {/* call to action */}
         <div className="hidden items-center gap-5 w-full justify-end md:flex">
           <Link
-            to="#"
+            to="https://calendly.com/stacksineden/30min"
+            target="_blank"
             className="text-[13px] text-[#071E22] cursor-pointer tracking-tight font-medium hover:text-[#1D7874] transition-all ease-in-out duration-300"
           >
-           Book a call
+            Book a call
           </Link>
           <Link
-            to="#"
+            to="https://medium.com/@stacksineden"
+            target="_blank"
             className="text-[13px] text-[#071E22] cursor-pointer tracking-tight font-medium hover:text-[#1D7874] transition-all ease-in-out duration-300"
           >
             Blog

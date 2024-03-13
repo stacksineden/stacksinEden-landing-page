@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import "../components/Hero.css";
 import Stories from "../components/Stories";
+import Footer from "../components/Footer";
 
 const UseCases = () => {
   return (
@@ -11,14 +12,15 @@ const UseCases = () => {
           Step into the Future: Witness AI Solutions in Action, Right Now!
         </p>
         <p className="text-[14px] md:text-[16px] font-normal md:font-medium tracking-wide text-[#071E22]">
-          Explore Our AI Demos: Hands-On Trials of Cutting-Edge Solutions Await
-          You Here. Experience Tomorrow's Tech Today, Risk-Free!
+          Explore Our AI Saas Products: Hands-On Trials of Cutting-Edge
+          Solutions Await You Here. Experience Tomorrow's Tech Today, Risk-Free!
         </p>
-        <button className="text-[12px] md:text-[14px] text-[#F4C095] cursor-pointer tracking-tight font-semibold bg-[#071E22] px-4 md:px-6 py-2 md:py-3 active:scale-90 rounded-full mx-auto border-[1px] border-[#e5e5e5] transition-all ease-in-out duration-300 shadow-lg">
-           Try now
-        </button>
-      </div>
+        {/* <button className="text-[12px] md:text-[14px] text-[#F4C095] cursor-pointer tracking-tight font-semibold bg-[#071E22] px-4 md:px-6 py-2 md:py-3 active:scale-90 rounded-full mx-auto border-[1px] border-[#e5e5e5] transition-all ease-in-out duration-300 shadow-lg">
+          Try now
+        </button> */}
+      </div> 
       <Stories />
+      <Footer /> 
     </div>
   );
 };
