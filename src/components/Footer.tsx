@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 const Footer = () => {
   const Navigate = useNavigate();
   return (
-    <div className="bg-transparent text-gray-600 border-t border-gray-600 mt-4">
+    <div className="bg-transparent text-gray-600 border-t border-gray-400 mt-4">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-y-10 px-20 md:px-32 py-14">
         <div className="space-y-4 text-xs text-gray-800 font-roboto cursor-pointer flex flex-col">
           <h5 className="font-bold font-roboto text-[16px]">ABOUT</h5>
