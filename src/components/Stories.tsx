@@ -7,7 +7,7 @@ const productsData = [
     description:
       "EinsteinAI is a SaaS platform that utilizes cutting-edge AI technology to provide smart assistance. Users can train AI assistants based on custom knowledge and specialized functions in various categories. The platform offers pre-trained assistants and allows users to customize them for specific use cases",
     image: EinsteinLogo,
-    url: "einsteinai.com",
+    url: "https://www.einsteinnotes.com/",
   },
 ];
 
@@ -31,12 +31,12 @@ const Stories = () => {
                       {product.description}
                     </p>
                     <div className="flex justify-start mt-2">
-                      <button
+                      <a
                         className="text-[12px] md:text-[14px] text-[#071E22] cursor-pointer tracking-tight font-semibold bg-white px-4 md:px-4 py-2 md:py-2 active:scale-90 rounded-full border-[1px] border-[#e5e5e5] transition-all ease-in-out duration-300 shadow-lg"
-                        onClick={() => {}}
+                        href={product?.url}
                       >
                         Get Started
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
